@@ -2,8 +2,21 @@
 <navigation xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    app:startDestination="@id/movesFragment">
+    app:startDestination="@id/a_fragment">
     <fragment
-        android:id="@+id/movesFragment"
-        tools:layout="@layout/fragment_moves" />
+        android:id="@+id/a_fragment"
+        android:name="com.example.pedrobatista.kotlinstarter.presentation.starting.StartingFragment"
+        tools:layout="@layout/a_fragment">
+        <action
+            android:id="@+id/action_a_to_b"
+            app:destination="@+id/b_fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/b_fragment"
+        android:name="com.example.pedrobatista.kotlinstarter.presentation.b.BFragment"
+        tools:layout="@layout/b_fragment" />
 </navigation>

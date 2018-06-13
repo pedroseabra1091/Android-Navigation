@@ -1,6 +1,6 @@
 package com.example.pedrobatista.androidnavigation.presentation.moves
 
-class MovesContract {
+class StartingContract {
     interface Presenter {
         fun sampleFunction() : String
     }

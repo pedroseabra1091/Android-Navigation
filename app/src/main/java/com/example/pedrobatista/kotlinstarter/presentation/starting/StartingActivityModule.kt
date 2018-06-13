@@ -5,9 +5,9 @@ import dagger.Binds
 import dagger.Module
 
 @Module
-abstract class MovesModule {
+abstract class StartingActivityModule {
 
     @ActivityScope
     @Binds
-    abstract fun movesPresenter(movesPresenter: MovesPresenter) : MovesContract.Presenter
+    abstract fun starterPresenter(starterPresenter: StartingPresenter): StartingContract.Presenter
 }

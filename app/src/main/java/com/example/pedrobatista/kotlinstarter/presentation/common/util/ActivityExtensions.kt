@@ -5,21 +5,17 @@ import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentTransaction
 import android.support.v7.app.AppCompatActivity
 
-class ActivityExtensions {
-    companion object {
-        inline fun FragmentManager.inTransaction(func: FragmentTransaction.() -> FragmentTransaction) {
-            val fragmentTransaction = beginTransaction()
-            fragmentTransaction.func()
-            fragmentTransaction.commit()
-        }
-        fun AppCompatActivity.addFragment(fragment: Fragment, frameId: Int) {
-            supportFragmentManager.inTransaction {
-                add(frameId, fragment)
-            }
-        }
+// todo: Further test Kotlin HoF and lambdas
+inline fun FragmentManager.inTransaction(func: FragmentTransaction.() -> FragmentTransaction) {
+    val fragmentTransaction = beginTransaction()
+    fragmentTransaction.func()
+    fragmentTransaction.commit()
+}
 
-        fun AppCompatActivity.replaceFragment(fragment: Fragment, frameId: Int) {
-            supportFragmentManager.inTransaction { replace(frameId, fragment) }
-        }
-    }
+fun AppCompatActivity.addFragment(fragment: Fragment, frameId: Int) {
+    supportFragmentManager.inTransaction { add(frameId, fragment) }
+}
+
+fun AppCompatActivity.replaceFragment(fragment: Fragment, frameId: Int) {
+    supportFragmentManager.inTransaction { replace(frameId, fragment) }
 }

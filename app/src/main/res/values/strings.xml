@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">AndroidNavigation</string>
+    <string name="app_name"></string>
+    <string name="first_title_guideline">Navigation Guidelines</string>
+    <string name="first_body_guideline">The app should have a fixed starting destination.</string>
+    <string name="second_title_guideline">Stack</string>
+    <string name="second_body_guideline">
+        Represents the navigation state of an app.
+        The starting destination should always be at bottom of the stack and the current destination on top of the stack.
+    </string>
+    <string name="next">Next</string>
 </resources>
