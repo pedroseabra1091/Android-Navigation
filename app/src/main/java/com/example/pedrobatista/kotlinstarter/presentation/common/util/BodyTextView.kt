@@ -1,6 +1,7 @@
 package com.example.pedrobatista.kotlinstarter.presentation.common.util
 
 import android.content.Context
+import android.graphics.Color
 import android.graphics.Typeface
 import android.util.AttributeSet
 import android.widget.TextView
@@ -16,5 +17,6 @@ class BodyTextView : TextView {
     private fun applyCustomFont() {
         val customFont = Typeface.createFromAsset(context.assets, "fonts/open-sans-light.ttf")
         setTypeface(customFont)
+        setTextColor(Color.parseColor("#ffffff"))
     }
 }

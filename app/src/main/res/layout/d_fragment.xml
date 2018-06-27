@@ -13,60 +13,45 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintVertical_bias="0.3"
-        android:src="@drawable/stack" />
+        android:src="@drawable/box" />
 
     <com.example.pedrobatista.kotlinstarter.presentation.common.util.HeaderTextView
-        android:id="@+id/first_title_guideline"
+        android:id="@+id/fourth_title_guideline"
         app:layout_constraintTop_toBottomOf="@id/generic_image"
-        app:layout_constraintBottom_toTopOf="@id/next_button_b"
+        app:layout_constraintBottom_toTopOf="@id/back_button_d"
         app:layout_constraintVertical_bias="0.3"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/second_title_guideline"
+        android:text="@string/fourth_title_guideline"
         android:textSize="@dimen/text_size_extra_large" />
 
     <com.example.pedrobatista.kotlinstarter.presentation.common.util.BodyTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/first_title_guideline"
+        android:id="@+id/fourth_body_guideline"
+        app:layout_constraintTop_toBottomOf="@id/fourth_title_guideline"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_2x"
-        android:text="@string/second_body_guideline"
         android:textSize="@dimen/text_size_normal"
-        android:textAlignment="center"
         android:paddingRight="@dimen/margin_2x"
-        android:paddingLeft="@dimen/margin_2x" />
+        android:paddingLeft="@dimen/margin_2x"
+        android:textAlignment="center" />
 
     <Button
-        android:id="@+id/back_button_b"
+        android:id="@+id/back_button_d"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/next_button_b"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintRight_toRightOf="parent"
         android:textColor="@color/white"
         android:background="@color/grey"
         android:layout_marginBottom="@dimen/margin_10x"
         android:textAllCaps="true"
         android:text="Back"
-        android:textSize="@dimen/text_size_normal" />
-
-    <Button
-        android:id="@+id/next_button_b"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/back_button_b"
-        app:layout_constraintRight_toRightOf="parent"
-        android:textColor="@color/white"
-        android:background="@color/colorAccent"
-        android:layout_marginBottom="@dimen/margin_10x"
-        android:textAllCaps="true"
-        android:text="Next"
         android:textSize="@dimen/text_size_normal" />
 
 </android.support.constraint.ConstraintLayout>

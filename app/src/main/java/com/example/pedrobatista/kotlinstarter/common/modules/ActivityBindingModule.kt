@@ -1,12 +1,12 @@
-package com.example.pedrobatista.androidnavigation.common.modules
+package com.example.pedrobatista.kotlinstarter.common.modules
 
-import com.example.pedrobatista.androidnavigation.presentation.moves.StartingActivity
-import com.example.pedrobatista.androidnavigation.presentation.moves.StartingActivityModule
+import com.example.pedrobatista.kotlinstarter.presentation.starting.StartingActivity
+import com.example.pedrobatista.kotlinstarter.presentation.starting.StartingActivityModule
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
 @Module
 abstract class ActivitiesBindingModule {
     @ContributesAndroidInjector(modules = [StartingActivityModule::class])
-    abstract fun startingActivity():StartingActivity
+    abstract fun startingActivity(): StartingActivity
 }

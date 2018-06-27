@@ -1,4 +1,4 @@
-package com.example.pedrobatista.androidnavigation.presentation.moves
+package com.example.pedrobatista.kotlinstarter.presentation.starting
 
 class StartingContract {
     interface Presenter {

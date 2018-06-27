@@ -1,4 +1,4 @@
-package com.example.pedrobatista.androidnavigation.presentation.common
+package com.example.pedrobatista.kotlinstarter.presentation.common
 
 import android.os.Bundle
 import butterknife.ButterKnife

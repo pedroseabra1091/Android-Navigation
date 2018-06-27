@@ -17,6 +17,6 @@ class HeaderTextView : TextView {
     private fun applyCustomFont() {
         val customFont = Typeface.createFromAsset(context.assets, "fonts/nunito-bold.ttf")
         setTypeface(customFont)
-        setTextColor(Color.parseColor("#000000"))
+        setTextColor(Color.parseColor("#ffffff"))
     }
 }

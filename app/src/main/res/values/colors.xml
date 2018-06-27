@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@color/white</color>
-    <color name="colorPrimaryDark">@color/white</color>
-    <color name="colorAccent">#ff6347</color>
+    <color name="colorPrimary">@color/valhalla</color>
+    <color name="colorPrimaryDark">@color/valhalla</color>
+    <color name="colorAccent">@color/lamborange</color>
 
+    <color name="valhalla">#2B2C48</color>
+    <color name="lamborange">#ff6347</color>
     <color name="white">#ffffff</color>
     <color name="grey">#BEBEBE</color>
 </resources>

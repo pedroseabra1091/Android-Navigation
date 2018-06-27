@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     app:startDestination="@id/a_fragment">
     <fragment
         android:id="@+id/a_fragment"
@@ -10,13 +10,50 @@
         <action
             android:id="@+id/action_a_to_b"
             app:destination="@+id/b_fragment"
-            app:enterAnim="@anim/slide_in_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:exitAnim="@anim/slide_out_right"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:enterAnim="@anim/slide_out_top"
+            app:exitAnim="@anim/slide_in_top"
+            app:popEnterAnim="@anim/slide_out_top"
+            app:popExitAnim="@anim/slide_in_top" />
     </fragment>
     <fragment
         android:id="@+id/b_fragment"
         android:name="com.example.pedrobatista.kotlinstarter.presentation.b.BFragment"
-        tools:layout="@layout/b_fragment" />
+        android:label="Fragment B"
+        tools:layout="@layout/a_fragment">
+        <action
+            android:id="@+id/action_b_to_c"
+            app:destination="@+id/b_graph"
+            app:enterAnim="@anim/slide_out_top"
+            app:exitAnim="@anim/slide_in_top"
+            app:popEnterAnim="@anim/slide_out_top"
+            app:popExitAnim="@anim/slide_in_top" />
+    </fragment>
+    <navigation
+        android:id="@+id/b_graph"
+        app:startDestination="@id/c_fragment">
+        <fragment
+            android:id="@+id/c_fragment"
+            android:name="com.example.pedrobatista.kotlinstarter.presentation.c.CFragment"
+            android:label="Fragment C"
+            tools:layout="@layout/c_fragment">
+            <action
+                android:id="@+id/action_c_to_d"
+                app:destination="@id/d_fragment"
+                app:enterAnim="@anim/slide_out_top"
+                app:exitAnim="@anim/slide_in_top"
+                app:popEnterAnim="@anim/slide_out_top"
+                app:popExitAnim="@anim/slide_in_top" />
+        </fragment>
+        <fragment
+            android:id="@+id/d_fragment"
+            android:name="com.example.pedrobatista.kotlinstarter.presentation.d.DFragment"
+            android:label="Fragment D">
+            <action
+                android:id="@+id/action_d_to_a"
+                app:destination="@id/a_fragment" />
+            <argument
+                android:name="safeData"
+                android:defaultValue="Wrong Directions!" />
+        </fragment>
+    </navigation>
 </navigation>

@@ -7,5 +7,8 @@
         Represents the navigation state of an app.
         The starting destination should always be at bottom of the stack and the current destination on top of the stack.
     </string>
+    <string name="third_title_guideline">Nested graphs</string>
+    <string name="third_body_guideline">The current destination starts a new navigation graph - a nested graph</string>
+    <string name="fourth_title_guideline">Safe Args</string>
     <string name="next">Next</string>
 </resources>

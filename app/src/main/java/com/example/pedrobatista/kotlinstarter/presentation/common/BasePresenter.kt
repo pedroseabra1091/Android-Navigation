@@ -1,4 +1,6 @@
-package com.example.pedrobatista.androidnavigation.presentation.common
+package com.example.pedrobatista.kotlinstarter.presentation.common
+
+import com.example.pedrobatista.kotlinstarter.presentation.common.BaseView
 
 interface BasePresenter<V : BaseView> {
     fun attachView(view : V)

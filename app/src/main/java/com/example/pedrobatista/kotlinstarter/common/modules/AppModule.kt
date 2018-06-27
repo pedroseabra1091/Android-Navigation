@@ -1,9 +1,9 @@
-package com.example.pedrobatista.androidnavigation.common.modules
+package com.example.pedrobatista.kotlinstarter.common.modules
 
 import android.content.Context
 import android.content.SharedPreferences
 import android.preference.PreferenceManager
-import com.example.pedrobatista.androidnavigation.App
+import com.example.pedrobatista.kotlinstarter.App
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

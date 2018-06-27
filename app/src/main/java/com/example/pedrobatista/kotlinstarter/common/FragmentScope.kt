@@ -1,4 +1,4 @@
-package com.example.pedrobatista.androidnavigation.common
+package com.example.pedrobatista.kotlinstarter.common
 
 import javax.inject.Scope
 

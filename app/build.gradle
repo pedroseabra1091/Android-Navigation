@@ -7,7 +7,7 @@ apply plugin: "androidx.navigation.safeargs"
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.example.pedrobatista.androidnavigation"
+        applicationId "com.example.pedrobatista.kotlinStarter"
         minSdkVersion 21
         targetSdkVersion 27
         versionCode 1

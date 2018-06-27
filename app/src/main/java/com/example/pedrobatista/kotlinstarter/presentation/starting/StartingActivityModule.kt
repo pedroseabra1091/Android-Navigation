@@ -1,6 +1,6 @@
-package com.example.pedrobatista.androidnavigation.presentation.moves
+package com.example.pedrobatista.kotlinstarter.presentation.starting
 
-import com.example.pedrobatista.androidnavigation.common.ActivityScope
+import com.example.pedrobatista.kotlinstarter.common.ActivityScope
 import dagger.Binds
 import dagger.Module
 
